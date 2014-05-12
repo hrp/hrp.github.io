@@ -24,6 +24,7 @@ set :ga_key, 'UA-58268-5'
 configure :build do
   activate :imageoptim
   activate :minify_css
+  activate :minify_html
   activate :minify_javascript
 end
 
