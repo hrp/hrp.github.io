@@ -26,6 +26,12 @@ configure :build do
   activate :minify_javascript
 end
 
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method = :git
+  deploy.branch = "master"
+end
+
 # Custom helpers
 helpers do
 
