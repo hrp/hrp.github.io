@@ -4,6 +4,8 @@
   -# Meta tags
   = partial "layouts/meta"
 
+  %link{ href: 'http://fonts.googleapis.com/css?family=Open+Sans', rel: 'stylesheet', type: 'text/css'}
+
   -# Page title
   %title= page_title("My Site")
 
@@ -18,10 +20,12 @@
 
 %body{ class: page_classes }
   = yield
+  = partial "layouts/footer"
 
   -# JavaScripts
   = javascript_include_tag "http://code.jquery.com/jquery.min.js"
   = javascript_include_tag "application"
+  = partial "layouts/analytics"
 
 -# Need this to close the doctype partial
 </html>

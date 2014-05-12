@@ -1,7 +1,64 @@
 ---
-title: Welcome to Sauce
+title: Hiten Parmar
+
+site:
+  - 
+    :name: Labs
+    :slug: labs
+    :url: http://h10labs.com
+  -
+    :name: Facebook
+    :slug: facebook
+    :url: http://fb.me/hitenp
+  -
+    :name: LinkedIn
+    :slug: linkedin
+    :url: http://linkedin.com/in/hitenp
+  -
+    :name: GitHub
+    :slug: github
+    :url: http://github.com/hrp
+  -
+    :name: Instagram
+    :slug: instagram
+    :url: http://instagram.com/hrp
+  - 
+    :name: Tumblr
+    :slug: tumblr
+    :url: http://madh.org
+  -
+    :name: Twitter
+    :slug: twitter
+    :url: http://twitter.com/hitenp
+  -
+    :name: Foursquare
+    :slug: foursquare
+    :url: http://foursquare.com/user/hitenp
+  -
+    :name: Flickr
+    :slug: flickr
+    :url: http://flickr.com/photos/madh
+  -
+    :name: Last.fm
+    :slug: lastfm
+    :url: http://last.fm/user/gurulegend
+  - 
+    :name: About.me
+    :slug: aboutme
+    :url: http://about.me/h
 ---
 
-.sauce
-  %h1 Welcome to Sauce
-  %p Everything's set up and ready to go!<br />Start dipping your code in Sauce.
+%header
+  %h1 Hiten Parmar
+
+%section
+  %ul
+    - current_page.data.site.each do |s|
+      %li.site{ id: s.slug }
+        %div
+          %a{ href: s.url }
+            = s.name
+
+%aside
+
+

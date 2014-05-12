@@ -18,6 +18,8 @@ set :css_dir,    "stylesheets"
 set :js_dir,     "javascripts"
 set :images_dir, "images"
 
+set :ga_key, 'UA-58268-5'
+
 # Build config
 configure :build do
   activate :minify_css
@@ -40,5 +42,5 @@ helpers do
       default_title
     end
   end
-  
+
 end

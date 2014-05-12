@@ -5,9 +5,90 @@
 //------------------------------------------------------------------------------
 
 body {
-  background: #fff;
+  background: $background-color;
+  color: $text-color;
   font-family: $font-face-primary;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  color: #000;
+  text-align: center;
+}
+
+header {
+  color: $header-color;
+  font-size: 2em;
+  margin-bottom: 10px;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+aside {
+  @include replace-text-with-dimensions("portrait.jpg");
+  margin: auto;
+}
+
+footer {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  font-size: 0.6em;
+}
+
+section {
+  width: 320px;
+  padding: 20px;
+  margin: 20px;
+  /*  margin: @margin auto @margin auto;*/
+
+  margin-left: auto;
+  margin-right: auto;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  li :hover {
+    a {
+      color: white;
+    }
+  }
+  a {
+    color: $text-color;
+    padding: 4px 45px 4px 45px;
+    text-decoration: none;
+    width: 320px;
+  }
+}
+
+/* COMPANY COLORS */
+#twitter :hover {
+  background-color: $twitter-color;
+}
+#facebook :hover {
+  background-color: $facebook-color;
+}
+#tumblr :hover {
+  background-color: $tumblr-color;
+}
+#labs :hover {
+  background-color: $labs-color;
+}
+#flickr :hover {
+  background-color: $flickr-color;
+}
+#instagram :hover {
+  background-color: $instagram-color;
+}
+#linkedin :hover {
+  background-color: $linkedin-color;
+}
+#lastfm :hover {
+  background-color: $lastfm-color;
+}
+#github :hover {
+  background-color: $github-color;
+}
+#foursquare :hover {
+  background-color: $foursquare-color;
+}
+#aboutme :hover {
+  background-color: $aboutme-color;
 }

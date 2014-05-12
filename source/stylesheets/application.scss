@@ -6,10 +6,11 @@
 
 //= require_tree ./vendor
 
+@import "compass/reset";
 @import "compass";
 
-@import "config/colors";
 @import "config/typography";
+@import "config/colors";
 @import "config/general";
 @import "config/media";
 
