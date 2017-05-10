@@ -22,7 +22,10 @@ set :ga_key, 'UA-58268-5'
 
 # Build config
 configure :build do
-  activate :imageoptim
+  activate :imageoptim do |options|
+    options.pngout = false
+    options.svgo   = false
+  end
   activate :minify_css
   activate :minify_html
   activate :minify_javascript
